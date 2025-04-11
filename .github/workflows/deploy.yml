@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@ip-172-31-31-119 << 'EOF'
+          ssh -o StrictHostKeyChecking=no ubuntu@52.65.123.58 << 'EOF'
             cd /var/www/mywebsite/cicd
             git pull origin main
             # Restart Nginx or any other service if needed
